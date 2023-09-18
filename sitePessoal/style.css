@@ -1,0 +1,161 @@
+* {
+    margin: 0%;
+    padding: 0%
+}
+
+header {
+    max-width: 1800px;
+    max-height: 200px;
+    background-color:  black;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.img-header {
+    height: 80px;
+}
+
+.links-header {
+    max-width: 700px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link-header > a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.link-header > a:hover {
+    color: #F2A0B6;
+    transition-duration: 0.5s;
+}
+
+/*Hero*/
+
+.hero{
+    background-image: url('imgs/hero.png');
+    max-width: 1800px;
+    height: 900px;
+    margin: auto;
+}
+
+.heroTransparencia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    max-width: 1800px;
+    height: 900px;
+}
+
+.heroDireita > img {
+    width: 440px;
+    height: 520px;
+    border-radius: 30px;
+}
+
+.heroEsquerda > h1{
+    font-size: 60px;
+    color: #E8CFD2;
+}
+
+.heroEsquerda > div > a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.heroEsquerda > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    background-color: #2C2C2C;
+    border-radius: 50px;
+    margin-top: 45px;
+}
+
+/*media query para hero em tela menores*/
+
+@media (max-width: 800px) {
+    .heroDireita > img {
+        margin-top: 200px;
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+    }
+    .heroEsquerda > h1{
+        font-size: 40px;
+    }
+    .heroEsquerda{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 250px;
+    }
+    .headerParte1 > .links-header {
+        font-size: 13px;
+    }
+    .heroTransparencia {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+/*pag Sobre mim*/
+
+.sobreMim {
+    margin: auto;
+    max-width: 1800px;
+    height: 900px;
+}
+
+.sobreMim > div > h1 {
+    font-size: 50px;
+    margin-top: 100px;
+    color: #D97171;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 200px;
+}
+
+.elementosSobremim > div > img {
+    width: 400px;
+    height: 400px;
+    border: solid #D97171;
+    border-radius: 30px;
+}
+
+.elementosSobremim{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    margin-right: 200px;
+    padding-left: 40px;
+}
+
+.elementosSobremim > div > p {
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 586px;
+    height: 481px;
+}
+
+/*media query em "sobre mim"*/
+
+@media (max-width: 800px) {
+    .sobreMim {
+        display: flex;
+        justify-content: center;
+    }
+}
