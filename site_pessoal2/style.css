@@ -187,7 +187,7 @@ header {
 /*tamanho da tela*/
 .curiosidades {
     max-width: 1800px;
-    max-height: 2800px;
+    max-height: 2000px;
     margin: auto;
     background-color: #FFF0EA;
 }
@@ -206,6 +206,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    padding-bottom: 50px;
 }
 
 .card {
@@ -214,8 +215,8 @@ header {
     flex-direction: column;
     margin: 5px;
     width: 300px;
-    height: 352px;
-    background-color: #FFE0E0;
+    max-height: 352px;
+    background-color: #d6aaaa;
     border-radius: 20px;
     box-shadow: #00000046 0px 19px 38px, #00000042 0px 15px 12px;
 }
@@ -245,7 +246,6 @@ header {
         font-size: 30px;
         margin-bottom: 80px;
     }
-
     .card {
         display: flex;
         align-items: center;
@@ -261,11 +261,10 @@ header {
     margin: auto;
     background-image: url('imgs/fundoHabilidade.png');
     width: 1800px;
-    height: 1216px;
+    max-height: 1216px;
 }
 
 .elementosHabilidade {
-    
     background-color: rgba(0, 0, 0, 0.767);
     margin: auto;
     width: 1800px;
@@ -275,9 +274,14 @@ header {
 .elementosHabilidade > div > h1 {
     padding-top: 100px;
     margin-left: 200px;
-    font-size: 50px;
+    font-size: 60px;
     color: #FFF0EA;
     margin-bottom: 80px;
+}
+
+.elementosdivHabilidade > div > img {
+    width: 540px;
+    height: 580px;
 }
 
 .elementosdivHabilidade > div > p {
@@ -299,3 +303,45 @@ header {
 
 /*Falta responsividade*/
 
+@media (max-width: 800px) {
+    .elementosHabilidade > div > h1 {
+        text-align: left;
+        padding-top: 50px;
+        font-size: 50px;
+        
+    }
+
+    .elementosHabilidade {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elementosdivHabilidade > div > img {
+        width: 340px;
+        height: 380px;
+    }
+
+    .elementosdivHabilidade {
+        text-align: center;
+        padding-top: 50px;
+        margin-left: 0;
+        font-size: 30px;
+        margin-bottom: 80px;
+    }
+
+
+   /* .elementosCuriosidades > div > h1 {
+        text-align: center;
+        padding-top: 50px;
+        margin-left: 0;
+        font-size: 30px;
+        margin-bottom: 80px;
+    }
+    .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 2px;
+    }*/
+}
