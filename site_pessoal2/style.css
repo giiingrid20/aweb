@@ -125,7 +125,7 @@ header {
     font-size: 50px;
     color: #D97171;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 200px;
+    padding-left: 150px;
 }
 
 .elementosSobremim > div > img {
@@ -159,4 +159,42 @@ header {
         display: flex;
         justify-content: center;
     }
+}
+
+/*curiosidades*/
+
+.curiosidades {
+    max-width: 1800px;
+    height: 1300px;
+    margin: auto;
+    background-color: #FFF0EA;
+}
+
+.elementosCuriosidades > div > h1 {
+    padding-top: 100px;
+    padding-left: 150px;
+    font-size: 50px;
+    color: #D97171;
+}
+
+
+
+.cardsCuriosidades > div > img{
+    width: 288px;
+    height: 352px;
+    border-radius: 10px;
+    margin: 2px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.elementosCuriosidades > .cardsCuriosidades {
+    display: flex;
+    
+}
+
+.curiosidades > .elementosCuriosidades > .cardsCuriosidades {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
