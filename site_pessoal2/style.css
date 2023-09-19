@@ -206,8 +206,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-
 }
+
 .card {
     display: flex;
     align-items: center;
@@ -251,26 +251,51 @@ header {
         align-items: center;
         flex-direction: column;
         margin: auto;
-        margin-bottom: 10px;
+        margin-bottom: 2px;
     }
 }
 
-/*historico escolar*/
+/*habilidade*/
 
-.historicoEscolar {
-    max-width: 1800px;
-    max-height: 2800px;
+.habilidade {
     margin: auto;
-    background-color: #ffffff;
+    background-image: url('imgs/fundoHabilidade.png');
+    width: 1800px;
+    height: 1216px;
 }
 
-table{
-    border: solid 1px #2C2C2C;
-    border-collapse: collapse;
+.elementosHabilidade {
     
+    background-color: rgba(0, 0, 0, 0.767);
+    margin: auto;
+    width: 1800px;
+    height: 1216px;
 }
 
-table th, td{
-    border: solid 1px #2C2C2C;
-
+.elementosHabilidade > div > h1 {
+    padding-top: 100px;
+    margin-left: 200px;
+    font-size: 50px;
+    color: #FFF0EA;
+    margin-bottom: 80px;
 }
+
+.elementosdivHabilidade > div > p {
+    font-size: 40px;
+    margin-bottom: 200px;
+    max-width: 500px;
+    color: #FFFDFD;
+}
+
+.elementosdivHabilidade {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 400px;
+    margin-right: 40px;
+}
+
+/*Falta responsividade*/
+
