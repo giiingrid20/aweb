@@ -116,16 +116,15 @@ header {
 
 .sobreMim {
     max-width: 1800px;
-    height: 900px;
+    max-height: 2000px;
     margin: auto;
-    padding-top: 100px;
+    margin-top: 100px;
 }
 
 .sobreMim > div > h1 {
     font-size: 50px;
     color: #D97171;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 150px;
+    margin-left: 200px;
 }
 
 .elementosSobremim > div > img {
@@ -141,60 +140,137 @@ header {
     flex-wrap: wrap;
     margin-top: 200px;
     margin-right: 200px;
-    padding-left: 40px;
+    margin-left: 40px;
 }
 
 .elementosSobremim > div > p {
-    padding-left: 100px;
     font-size: 25px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    width: 586px;
-    height: 481px;
+    margin-bottom: 200px;
+    max-width: 500px;
+    
 }
 
 /*media query em "sobre mim"*/
 
 @media (max-width: 800px) {
-    .sobreMim {
+    .elementosSobremim {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .elementosSobremim > div > p {
+        font-size: 10px;
+        text-align: center;
+        margin: 20px 50px;
+        height: 200px;
+    }
+    
+    .elementosSobremim > div > img {
+        width: 200px;
+        height: 200px;
+    }
+    .sobreMim > div > h1 {
+        font-size: 25px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 20px;
     }
 }
 
 /*curiosidades*/
 
+
+/*tamanho da tela*/
 .curiosidades {
     max-width: 1800px;
-    height: 1300px;
+    max-height: 2800px;
     margin: auto;
     background-color: #FFF0EA;
 }
 
+/*título*/
 .elementosCuriosidades > div > h1 {
     padding-top: 100px;
-    padding-left: 150px;
+    margin-left: 200px;
     font-size: 50px;
     color: #D97171;
+    margin-bottom: 80px;
 }
 
-
-
-.cardsCuriosidades > div > img{
-    width: 288px;
-    height: 352px;
-    border-radius: 10px;
-    margin: 2px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.elementosCuriosidades > .cardsCuriosidades {
+.cardsCuriosidades{
+    max-width: 1000px;
     display: flex;
-    
-}
+    flex-wrap: wrap;
+    margin: auto;
 
-.curiosidades > .elementosCuriosidades > .cardsCuriosidades {
+}
+.card {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 5px;
+    width: 300px;
+    height: 352px;
+    background-color: #FFE0E0;
+    border-radius: 20px;
+    box-shadow: #00000046 0px 19px 38px, #00000042 0px 15px 12px;
+}
+
+.card > div > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card > div > p {
+    width: 300px;
+    text-align: center;
+}
+
+.card > div > h2 {
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .elementosCuriosidades > div > h1 {
+        text-align: center;
+        padding-top: 50px;
+        margin-left: 0;
+        font-size: 30px;
+        margin-bottom: 80px;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+
+/*historico escolar*/
+
+.historicoEscolar {
+    max-width: 1800px;
+    max-height: 2800px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+table{
+    border: solid 1px #2C2C2C;
+    border-collapse: collapse;
+    
+}
+
+table th, td{
+    border: solid 1px #2C2C2C;
+
 }
