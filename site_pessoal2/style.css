@@ -293,55 +293,35 @@ header {
 
 .elementosdivHabilidade {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     justify-content: space-around;
     margin-top: 400px;
     margin-right: 40px;
+    
 }
 
-/*Falta responsividade*/
+
 
 @media (max-width: 800px) {
-    .elementosHabilidade > div > h1 {
-        text-align: left;
-        padding-top: 50px;
-        font-size: 50px;
-        
-    }
-
-    .elementosHabilidade {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .elementosdivHabilidade > div > img {
-        width: 340px;
-        height: 380px;
+    .elementosdivHabilidade > div >  img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
     }
 
     .elementosdivHabilidade {
-        text-align: center;
-        padding-top: 50px;
-        margin-left: 0;
-        font-size: 30px;
-        margin-bottom: 80px;
-    }
-
-
-   /* .elementosCuriosidades > div > h1 {
-        text-align: center;
-        padding-top: 50px;
-        margin-left: 0;
-        font-size: 30px;
-        margin-bottom: 80px;
-    }
-    .card {
         display: flex;
-        align-items: center;
         flex-direction: column;
-        margin: auto;
-        margin-bottom: 2px;
-    }*/
+    }
+}
+
+/*Falta responsividade no habilidades*/
+
+
+footer {
+    width: 1800px;
+    height: 200px ;
+    background-color: black;
+    margin: auto;
 }
