@@ -166,7 +166,7 @@ header {
         padding: 0;
     }
     .elementosSobremim > div > p {
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
         margin: 20px 50px;
         height: 200px;
@@ -182,6 +182,8 @@ header {
         margin: 0;
         margin-bottom: 20px;
     }
+
+    
 }
 
 /*curiosidades*/
@@ -249,7 +251,7 @@ header {
         padding-top: 50px;
         margin-left: 0;
         font-size: 30px;
-        margin-bottom: 80px;
+        margin-bottom: 10px;
     }
     .card {
         display: flex;
@@ -265,14 +267,14 @@ header {
 .habilidade {
     margin: auto;
     background-image: url('imgs/fundoHabilidade.png');
-    width: 1800px;
-    max-height: 1216px;
+    max-width: 1800px;
+    height: 1216px;
 }
 
 .elementosHabilidade {
     background-color: rgba(0, 0, 0, 0.767);
     margin: auto;
-    width: 1800px;
+    max-width: 1800px;
     height: 1216px;
 }
 
@@ -309,23 +311,42 @@ header {
 
 @media (max-width: 800px) {
     .elementosdivHabilidade > div >  img {
-        width: 300px;
-        height: 300px;
+        max-width: 300px;
+        max-height: 300px;
         border-radius: 50%;
     }
 
     .elementosdivHabilidade {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        margin-left: 50px;
     }
+
+    .elementosHabilidade > div > h1 {
+        padding-top: 100px;
+        margin-left: 0px;
+        font-size: 50px;
+        margin-bottom: 0px;
+    }
+
+    .habilidade {
+       text-align: center;
+    }
+
+    .elementosdivHabilidade > div > p {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    
+
 }
 
-/*Falta responsividade no habilidades*/
 
 
 footer {
-    width: 1800px;
-    height: 200px ;
+    max-width: 1800px;
+    max-height: 400px ;
     background-color: black;
     margin: auto;
 }
@@ -371,6 +392,7 @@ footer {
 .elementosFooter {
     display: flex;
     margin-left: 180px;
+    flex-wrap: wrap;
 }
 
 .footerdiv1 {
@@ -378,6 +400,7 @@ footer {
     flex-direction: column;
     margin-right: 100px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .footerdiv2 {
@@ -395,4 +418,22 @@ footer {
 .elementosFooter > div > img {
     height: 180px;
     border-radius: 50%;
+}
+
+
+@media (max-width: 800px) {
+    .elementosFooter{
+        max-width: 300px;
+        max-height: 400px;
+    }
+    .elementosFooter {
+        display: flex;
+        margin-left: 2px;
+        flex-wrap: wrap;
+        padding-top: 50px;
+    }
+    .footerdiv1 > h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
