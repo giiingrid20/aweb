@@ -32,9 +32,8 @@ header {
     text-decoration: none;
 }
 
-.link-header > a:hover {
-    color: #F2A0B6;
-    transition-duration: 0.5s;
+.iconefooter > a:hover{
+    color: #d971c8;
 }
 
 /*Hero*/
@@ -84,6 +83,10 @@ header {
     background-color: #2C2C2C;
     border-radius: 50px;
     margin-top: 45px;
+}
+
+.butaohero > a:hover {
+    color: #D97171;
 }
 
 /*media query para hero em tela menores*/
@@ -145,7 +148,7 @@ header {
 
 .elementosSobremim > div > p {
     font-size: 25px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: serif;
     margin-bottom: 200px;
     max-width: 500px;
     
@@ -163,7 +166,7 @@ header {
         padding: 0;
     }
     .elementosSobremim > div > p {
-        font-size: 10px;
+        font-size: 15px;
         text-align: center;
         margin: 20px 50px;
         height: 200px;
@@ -187,7 +190,7 @@ header {
 /*tamanho da tela*/
 .curiosidades {
     max-width: 1800px;
-    max-height: 2000px;
+    max-height: 2100px;
     margin: auto;
     background-color: #FFF0EA;
 }
@@ -222,8 +225,8 @@ header {
 }
 
 .card > div > img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -231,6 +234,8 @@ header {
 
 .card > div > p {
     width: 300px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -251,7 +256,7 @@ header {
         align-items: center;
         flex-direction: column;
         margin: auto;
-        margin-bottom: 2px;
+        margin-bottom: 5px;
     }
 }
 
@@ -296,9 +301,8 @@ header {
     align-items: center;
     justify-content: center;
     justify-content: space-around;
-    margin-top: 400px;
+    margin-top: 250px;
     margin-right: 40px;
-    
 }
 
 
@@ -324,4 +328,71 @@ footer {
     height: 200px ;
     background-color: black;
     margin: auto;
+}
+.footerdiv1 > h2 {
+    color: white;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footerdiv1 > div > i {
+    color: white;
+    font-size: 50px;
+}
+
+.footerdiv1 > div > a:hover {
+    color: #d971c8;
+}
+
+
+.footerdiv1 > div > a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.footerdiv2 > h2 {
+    color: white;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footerdiv2 > h6 {
+    color: white;
+    font-size: 25px;
+    margin-top: 13px;
+}
+
+.elementosFooter {
+    display: flex;
+    margin-left: 180px;
+}
+
+.footerdiv1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    flex-wrap: wrap;
+}
+
+.footerdiv2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.iconefooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elementosFooter > div > img {
+    height: 180px;
+    border-radius: 50%;
 }

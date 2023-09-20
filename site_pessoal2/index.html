@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="fontawesome-20230914T190715Z-001/fontawesome/css/all.min.css">
     <title>Página Pessoal</title>
 </head>
 <body>
     <header class="headerParte1">
             <img class="img-header" src="imgs/header.png" alt="">
             <div class="links-header">
-                <div class="link-header"><a href="">Home</a></div>
-                <div class="link-header"><a href="">Sobre mim</a></div>
-                <div class="link-header"><a href="">Curiosidades</a></div>
-                <div class="link-header"><a href="">Escolas</a></div>
-                <div class="link-header"><a href="">habilidades</a></div>
-                <div class="link-header"><a href="">contato</a></div>
+                <div class="link-header"><a href="#home">Home</a></div>
+                <div class="link-header"><a href="#sobreMim">Sobre mim</a></div>
+                <div class="link-header"><a href="#curiosidades">Curiosidades</a></div>
+                <div class="link-header"><a href="#habilidade">habilidades</a></div>
+                <div class="link-header"><a href="#contatos">contatos</a></div>
             </div>
     </header>
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="heroTransparencia">
                 <div class="heroEsquerda">
-                    <h1>Giovanna Ingrid</h1>
-                    <div><a href="">Sobre mim</a></div>
+                    <h1 >Giovanna Ingrid</h1>
+                    <div class="butaohero">
+                        <a href="#home">Sobre mim</a>
+                    </div>
                 </div>
                 <div class="heroDireita">
                     <img src="imgs/imgsobremim.jpg" alt="">
                 </div>
             </div>
         </section>
-        <section class="sobreMim">
+        <section id="sobreMim" class="sobreMim">
             <div>
                 <h1>Sobre mim</h1>
                 <div class="elementosSobremim">
@@ -45,7 +49,7 @@
                 </div>
             </div>
         </section>
-        <section class="curiosidades">
+        <section id="curiosidades" class="curiosidades">
             <div class="elementosCuriosidades">
                 <div>
                     <h1>Top 6 curiosidades sobre mim</h1>
@@ -62,7 +66,7 @@
                     </div>
                     <div class="card">
                         <div class="img-card">
-                            <img src="imgs/imgsobremim.jpg" alt="">
+                            <img src="imgs/praia.JPG" alt="">
                         </div>
                         <div>
                             <h2>aventura</h2>
@@ -71,7 +75,7 @@
                     </div>
                     <div class="card">
                         <div class="img-card">
-                            <img src="imgs/imgsobremim.jpg" alt="">
+                            <img src="imgs/fotolagoa.jpg" alt="">
                         </div>
                         <div>
                             <h2>natureza</h2>
@@ -80,35 +84,36 @@
                     </div>
                     <div class="card">
                         <div class="img-card">
-                            <img src="imgs/imgsobremim.jpg" alt="">
+                            <img src="imgs/make.jpeg" alt="">
                         </div>
                         <div>
                             <h2>Música</h2>
-                            <p>maquiagem é minha maior paixão</p>
+                            <p>Gosto de vários estilos de música, do reggae ao rock.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="img-card">
-                            <img src="imgs/imgsobremim.jpg" alt="">
+                            <img src="imgs/amo roxo.jpg" alt="">
                         </div>
                         <div>
                             <h2>cor favorita</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident quibusdam quis eligendi, vitae perferendis ea aspernatur placeat sequi. Quam tenetur velit cupiditate pariatur consectetur facilis mollitia, amet doloremque. Suscipit, beatae.</p>
+                            <p>Minha cor favorita é roxo(um tom de roxo claro), por causa de uma série que envolve música também.
+                            </p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="img-card">
-                            <img src="imgs/imgsobremim.jpg" alt="">
+                            <img src="imgs/mycat.jpg" alt="">
                         </div>
                         <div>
                             <h2>Cats</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident quibusdam quis eligendi, vitae perferendis ea aspernatur placeat sequi. Quam tenetur velit cupiditate pariatur consectetur facilis mollitia, amet doloremque. Suscipit, beatae.</p>
+                            <p>Adotei um gatinho de rua, só que minha mãe não gostou da ideia, a solução foi dividir a guarda dele com meu namorado rs.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="habilidade">
+        <section id="habilidade" class="habilidade">
             <div class="elementosHabilidade">
                 <div>
                     <h1>Habilidade</h1>
@@ -125,10 +130,22 @@
         </section>
     </main>
     <footer>
-        <div>
-            <h4>Social</h4>
-            <div>
-
+        <div id="contatos" class="elementosFooter">
+            <div class="footerdiv1">
+                <h2>Social</h2>
+                <div class="iconefooter">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/gimakesss/">@gimakesss</a>
+                </div>
+                <div class="iconefooter">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <a href='https://www.tiktok.com/@gimakessx'>@gimakessx</a>
+                </div>
+            </div>
+            <div class="footerdiv2"> 
+                <h2>Contato</h2>
+                <h6>84 99660-9330</h6>
+                <h6>giovanyny123321@gmail.com</h6>
             </div>
         </div>
     </footer>
