@@ -10,6 +10,9 @@ header {
     margin: auto;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.452);
     
 }
 
@@ -32,7 +35,7 @@ header {
     text-decoration: none;
 }
 
-.iconefooter > a:hover{
+.links-header > div > a:hover{
     color: #d971c8;
 }
 
@@ -182,6 +185,9 @@ header {
         margin: 0;
         margin-bottom: 20px;
     }
+    .sobreMim {
+        height: 800px;
+    }
 }
 
 /*curiosidades*/
@@ -265,14 +271,14 @@ header {
 .habilidade {
     margin: auto;
     background-image: url('imgs/fundoHabilidade.png');
-    width: 1800px;
+    max-width: 1800px;
     max-height: 1216px;
 }
 
 .elementosHabilidade {
     background-color: rgba(0, 0, 0, 0.767);
     margin: auto;
-    width: 1800px;
+    max-width: 1800px;
     height: 1216px;
 }
 
@@ -301,13 +307,14 @@ header {
     align-items: center;
     justify-content: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 250px;
     margin-right: 40px;
 }
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .elementosdivHabilidade > div >  img {
         width: 300px;
         height: 300px;
@@ -317,6 +324,16 @@ header {
     .elementosdivHabilidade {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .elementosHabilidade > div > h1 {
+        text-align: center;
+        margin: 0;
+    }
+    .elementosdivHabilidade > div > img {
+        margin: 0;
+         
     }
 }
 
@@ -324,8 +341,8 @@ header {
 
 
 footer {
-    width: 1800px;
-    height: 200px ;
+    max-width: 1800px;
+    max-height: 500px ;
     background-color: black;
     margin: auto;
 }
@@ -371,6 +388,7 @@ footer {
 .elementosFooter {
     display: flex;
     margin-left: 180px;
+    flex-wrap: wrap;
 }
 
 .footerdiv1 {
@@ -383,7 +401,6 @@ footer {
 .footerdiv2 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .iconefooter {
@@ -396,3 +413,26 @@ footer {
     height: 180px;
     border-radius: 50%;
 }
+@media (max-width: 800px){
+    .footerdiv1 {
+        margin: 0;
+    }
+
+    .footerdiv2 {
+        margin-left: 10px;
+    }
+
+    .footerdiv1 > div > i{
+        font-size: 20px;
+    }
+    .footerdiv2 > h6 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .elementosFooter  {
+       display: flex;
+       margin-left: 0;
+    }
+}
+    
