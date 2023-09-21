@@ -10,7 +10,8 @@ header {
     margin: auto;
     display: flex;
     align-items: center;
-    
+    position: sticky;
+    top: 0%;
 }
 
 .img-header {
