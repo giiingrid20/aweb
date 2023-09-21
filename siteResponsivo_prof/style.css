@@ -8,7 +8,7 @@ header {
     max-width: 1844px;
     max-height: 120px;
     background-color: #402401;
-    position: sticky;
+    position: sticky; 
     top: 0%;
     flex-wrap: wrap;
 }
